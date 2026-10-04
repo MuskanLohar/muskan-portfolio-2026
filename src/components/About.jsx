@@ -4,11 +4,12 @@ import {
   GraduationCap, 
   Code, 
   CheckCircle2, 
-  Briefcase
+  Briefcase,
+  Download
 } from 'lucide-react';
 import { aboutData, personalInfo } from '../data/portfolioData';
 
-const About = () => {
+const About = ({ onDownloadResume }) => {
   return (
     <section id="about" className="py-20 relative bg-slate-950/60 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,13 +49,31 @@ const About = () => {
                 <h4 className="text-xs uppercase tracking-wider text-slate-400 font-mono mb-4">
                   Core Development Competencies:
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                   {aboutData.coreCapabilities.map((capability, idx) => (
                     <div key={idx} className="flex items-start gap-2.5">
                       <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                       <span className="text-xs sm:text-sm text-slate-200">{capability}</span>
                     </div>
                   ))}
+                </div>
+
+                {/* About Section Resume CTA */}
+                <div className="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
+                  <span className="text-xs text-slate-400 font-mono">
+                    Official Resume Document
+                  </span>
+                  <a
+                    href={personalInfo.resumePath}
+                    download="muskanlohar-mern-resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={onDownloadResume}
+                    className="inline-flex items-center gap-2 px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 to-indigo-300 rounded-xl hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-200 cursor-pointer"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>Download Resume</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -125,6 +144,19 @@ const About = () => {
                   </div>
                   <div className="text-slate-400 font-sans text-xs">
                     Mandsaur University, Mandsaur
+                  </div>
+                </div>
+
+                {/* Professional Training */}
+                <div className="p-3.5 rounded-xl bg-slate-900/80 border border-indigo-500/30 flex flex-col justify-between gap-1.5">
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="text-white font-sans font-semibold">MERN Stack Development Training</div>
+                    <span className="px-2 py-0.5 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/30 font-mono text-[10px] shrink-0">
+                      eSkill, Indore • 6 Months
+                    </span>
+                  </div>
+                  <div className="text-slate-400 font-sans text-xs">
+                    Hands-on training in React.js, Node.js, Express.js, MongoDB, REST APIs, authentication, and CRUD operations.
                   </div>
                 </div>
               </div>

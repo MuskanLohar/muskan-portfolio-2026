@@ -44,13 +44,17 @@ const ResumeCTA = ({ onDownloadResume }) => {
 
             {/* Right Action Button (4 Cols) */}
             <div className="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
-              <button
+              <a
+                href={personalInfo.resumePath}
+                download="muskanlohar-mern-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={onDownloadResume}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 via-cyan-300 to-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] cursor-pointer shadow-lg"
               >
                 <Download className="w-5 h-5" />
                 <span>Download Resume</span>
-              </button>
+              </a>
               <span className="text-[11px] font-mono text-slate-400 mt-3.5">
                 PDF File • Verified Fresher Candidate
               </span>

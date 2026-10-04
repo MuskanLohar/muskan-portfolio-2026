@@ -1,64 +1,86 @@
 /**
- * Portfolio Data for Muskan - MERN Stack Developer
- * All content, links, and project details can be edited directly in this file.
+ * Portfolio Data for Muskan Lohar - MERN Stack Developer
+ * Synchronized with official resume details.
  */
 
 export const personalInfo = {
-  name: "Muskan",
-  title: "MERN Stack Developer",
-  subTitle: "Building modern, responsive, and scalable full-stack web applications using the MERN stack.",
+  name: "Muskan Lohar",
+  title: "Full Stack Developer | MERN Stack",
+  subTitle: "Entry-level Full Stack Developer focused on the MERN stack, building responsive, secure, and scalable web applications.",
   location: "Indore, Madhya Pradesh, India",
   email: "muskanlohar0@gmail.com",
   phone: "6261507425",
   phoneFormatted: "+91 6261507425",
   
-  // Asset Paths (Replace files in public/ folder when ready)
-  profilePhoto: "/muskan-profile-photo.jpg", // Place photo in public/muskan-profile-photo.jpg
-  resumePath: "/muskan-resume.pdf",          // Place PDF in public/muskan-resume.pdf
+  // Asset Paths
+  profilePhoto: "/muskan-profile-photo.jpg",
+  resumePath: "/muskanlohar-mern-resume.pdf",
 
   // Official Verified Social Profile URLs
   githubUrl: "https://github.com/MuskanLohar",
   linkedinUrl: "https://www.linkedin.com/in/muskan-lohar-fullstack",
   
   status: "Open to Work",
-  availabilityText: "Available for MERN Stack / Full Stack Developer Roles",
+  availabilityText: "Available for Full Stack Developer / MERN Stack Developer Roles",
 
   targetRoles: [
-    "MERN Stack Developer",
     "Full Stack Developer",
+    "MERN Stack Developer",
     "React Developer",
-    "Junior Software Developer"
+    "Frontend Developer",
+    "Node.js Backend Developer"
   ]
 };
 
 export const aboutData = {
-  paragraph1: "I’m Muskan, a MERN Stack Developer with a completed BCA and currently pursuing MCA. I have completed a 6-month MERN Stack Development training course from eSkills, Indore, where I gained hands-on experience in building full-stack web applications using React.js, Node.js, Express.js and MongoDB.",
-  paragraph2: "I enjoy solving problems, learning new technologies and building practical web applications. I’m currently looking for opportunities as a MERN Stack Developer / Full Stack Developer.",
+  paragraph1: "I'm Muskan Lohar, an entry-level Full Stack Developer focused on the MERN stack, currently pursuing an MCA at Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Indore. Completed hands-on training in MongoDB, Express.js, React.js, and Node.js, building full-stack web applications with JWT authentication, REST APIs, and responsive interfaces.",
+  paragraph2: "Skilled in React.js, Node.js, Express.js, MongoDB, Tailwind CSS, and Git. Eager to contribute to real-world software development projects and continuously enhance my technical expertise.",
   
+  training: {
+    title: "MERN Stack Development Training",
+    organization: "eSkill, Indore",
+    duration: "6 Months",
+    description: "Hands-on training in React.js, Node.js, Express.js, MongoDB, REST APIs, authentication, and CRUD operations."
+  },
+
   coreCapabilities: [
-    "React.js & Modern Frontend Architecture",
-    "Node.js & Express.js REST API Design",
-    "MongoDB Database Schema & Mongoose",
-    "Secure JWT Authentication & Authorization",
-    "Third-Party & AI API Integrations",
-    "Git & GitHub Version Control Workflows",
-    "Responsive, Accessible & Mobile-First UI Design"
+    "React.js & Modern Frontend Development",
+    "Node.js & Express.js REST API Architecture",
+    "MongoDB Database & Mongoose Integration",
+    "JWT Authentication & Role-Based Access Control",
+    "Gemini AI API & Third-Party Integrations",
+    "Git, GitHub & Postman Workflows",
+    "Responsive, Accessible & Mobile-First Web UI"
   ]
 };
 
 export const skillsCategorized = [
   {
+    category: "Languages",
+    icon: "Code2",
+    skills: [
+      { name: "JavaScript", isCore: true },
+      { name: "TypeScript", isCore: true }
+    ]
+  },
+  {
     category: "Frontend",
     icon: "Layout",
     skills: [
-      { name: "HTML", isCore: false },
-      { name: "CSS", isCore: false },
-      { name: "JavaScript", isCore: true },
-      { name: "TypeScript", isCore: true },
+      { name: "HTML5", isCore: true },
+      { name: "CSS3", isCore: true },
       { name: "React.js", isCore: true },
-      { name: "Redux", isCore: true },
+      { name: "Redux Toolkit", isCore: true },
       { name: "Tailwind CSS", isCore: true },
       { name: "Next.js", isCore: false }
+    ]
+  },
+  {
+    category: "APIs & Integration",
+    icon: "Webhook",
+    skills: [
+      { name: "REST APIs", isCore: true },
+      { name: "API Integration", isCore: true }
     ]
   },
   {
@@ -66,8 +88,7 @@ export const skillsCategorized = [
     icon: "Server",
     skills: [
       { name: "Node.js", isCore: true },
-      { name: "Express.js", isCore: true },
-      { name: "RESTful APIs", isCore: true }
+      { name: "Express.js", isCore: true }
     ]
   },
   {
@@ -75,168 +96,83 @@ export const skillsCategorized = [
     icon: "Database",
     skills: [
       { name: "MongoDB", isCore: true },
-      { name: "Mongoose ODM", isCore: true }
+      { name: "Mongoose", isCore: true }
     ]
   },
   {
-    category: "Tools & Version Control",
+    category: "Authentication",
+    icon: "ShieldCheck",
+    skills: [
+      { name: "JWT", isCore: true },
+      { name: "bcrypt", isCore: true }
+    ]
+  },
+  {
+    category: "Tools & Technologies",
     icon: "Wrench",
     skills: [
       { name: "Git", isCore: true },
       { name: "GitHub", isCore: true },
-      { name: "VS Code", isCore: false },
       { name: "Postman", isCore: true }
     ]
   },
   {
-    category: "Deployment & Hosting",
+    category: "Cloud & Services",
     icon: "Cloud",
     skills: [
-      { name: "Vercel", isCore: false },
-      { name: "Render", isCore: false }
-    ]
-  },
-  {
-    category: "Specialized & Architecture",
-    icon: "ShieldCheck",
-    skills: [
-      { name: "JWT Authentication", isCore: true },
-      { name: "API Integration", isCore: true },
-      { name: "AI API Integration", isCore: true }
+      { name: "Render", isCore: true },
+      { name: "Gemini API", isCore: true }
     ]
   }
 ];
 
 export const projectsData = [
   {
-    id: "eventspark",
-    name: "EventSpark",
-    projectType: "MERN Stack Event Management Platform",
-    tagline: "MERN Stack Event Management Platform",
-    shortDescription: "Full-stack event management platform with authentication, RSVP management, admin controls and AI-powered event description generation.",
+    id: "hrms-management",
+    name: "HRMS – Human Resource Management System",
+    projectType: "MERN Stack Application",
+    tagline: "Full-stack Human Resource Management System for managing employee records and HR operations.",
+    shortDescription: "Built with React.js, Node.js, Express.js, MongoDB, Mongoose, and JWT authentication with role-based access for employee directory management.",
     featured: true,
     isPrimary: true,
-    badgeText: "PRIMARY FEATURED PROJECT",
-    category: "Full Stack",
-    imageTheme: "emerald",
-    cardTechStack: ["React", "Redux", "Node.js", "Express", "MongoDB", "JWT", "Gemini AI"],
-    techStack: [
-      "React.js",
-      "Redux",
-      "JavaScript",
-      "CSS / Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "MongoDB",
-      "Mongoose",
-      "JWT",
-      "Gemini AI API",
-      "Multer",
-      "Git",
-      "GitHub",
-      "Postman"
-    ],
-    techStackCategorized: [
-      { category: "Frontend", items: ["React.js", "Redux", "JavaScript", "CSS / Tailwind CSS"] },
-      { category: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
-      { category: "Database", items: ["MongoDB", "Mongoose"] },
-      { category: "Authentication", items: ["JWT"] },
-      { category: "Other", items: ["Gemini AI API", "Multer", "Git", "GitHub", "Postman"] }
-    ],
-    overview: "EventSpark is a full-stack event management web application where users can discover events, view event details and RSVP to events. It also provides administrative features for managing events and monitoring RSVPs.",
-    problem: "Managing events, registrations and attendee information manually can be difficult. EventSpark provides a centralized web application for discovering events, managing event information and handling user RSVPs.",
-    solution: "I built a MERN Stack application that allows authenticated users to browse and search events, view event details and RSVP with different attendance preferences. Administrators can manage events and monitor RSVP information from the admin side.",
-    myRoleTitle: "Full-Stack Developer",
-    myRole: "I worked on both frontend and backend development, including UI development, API integration, authentication, database operations and application features.",
-    keyFeatures: [
-      "User registration and login",
-      "JWT-based authentication",
-      "Event listing and event details",
-      "Event search",
-      "RSVP functionality",
-      "Going / Interested / Not Going attendance options",
-      "Attendance tracking",
-      "Admin authentication",
-      "Admin event management",
-      "Event CRUD operations",
-      "RSVP management",
-      "AI-powered event description generation",
-      "Responsive user interface",
-      "REST API integration"
-    ],
-    challengesSolved: [
-      "Connecting the React frontend with the Node.js/Express backend through REST APIs.",
-      "Implementing authentication and protecting authenticated routes.",
-      "Managing RSVP states and attendance information.",
-      "Building separate user and admin functionality.",
-      "Integrating AI-powered event description generation.",
-      "Handling file uploads and backend API integration.",
-      "Managing application state using Redux."
-    ],
-    liveDemoUrl: "https://eventspark-zpfl.onrender.com/login",
-    githubUrl: "https://github.com/MuskanLohar/EventSpark",
-    liveDemoText: "Live Demo",
-    githubText: "GitHub Repository"
-  },
-  {
-    id: "hrms-management",
-    name: "HRMS Management",
-    projectType: "MERN Stack Human Resource Management System",
-    tagline: "MERN Stack Human Resource Management System",
-    shortDescription: "Full-stack HR management system with authentication, employee CRUD, role-based operations and leave management.",
-    featured: true,
-    isPrimary: false,
-    category: "Enterprise Web App",
+    badgeText: "FEATURED MERN PROJECT",
+    category: "MERN Stack",
     imageTheme: "indigo",
-    cardTechStack: ["React", "Node.js", "Express", "MongoDB", "JWT", "REST API"],
+    cardTechStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT"],
     techStack: [
       "React.js",
-      "JavaScript",
-      "CSS / Tailwind CSS",
       "Node.js",
       "Express.js",
-      "REST APIs",
       "MongoDB",
       "Mongoose",
       "JWT",
+      "Tailwind CSS",
+      "REST APIs",
       "Git",
       "GitHub",
       "Postman"
     ],
     techStackCategorized: [
-      { category: "Frontend", items: ["React.js", "JavaScript", "CSS / Tailwind CSS"] },
+      { category: "Frontend", items: ["React.js", "Tailwind CSS"] },
       { category: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
       { category: "Database", items: ["MongoDB", "Mongoose"] },
-      { category: "Authentication", items: ["JWT"] },
-      { category: "Tools", items: ["Git", "GitHub", "Postman"] }
+      { category: "Authentication", items: ["JWT"] }
     ],
-    overview: "HRMS Management is a full-stack MERN application designed to manage employees, authentication, roles and leave-related operations in an organized system.",
-    problem: "Managing employee records, role permissions, and leave requests manually creates administrative friction. HRMS Management provides a structured digital workspace to resolve these operations.",
-    solution: "I engineered a centralized MERN application with role-based access control (Admin, HR, Manager), comprehensive employee directory CRUD, and leave quota tracking.",
-    myRoleTitle: "Full-Stack Developer",
-    myRole: "Full-Stack Developer - Built frontend interfaces in React with Tailwind CSS, created secure backend REST endpoints in Express, designed Mongoose schemas, and handled JWT auth.",
+    overview: "A full-stack Human Resource Management System (HRMS) engineered to manage employee records, role-based user management, and HR operations efficiently.",
+    problem: "Managing employee records and HR requests manually leads to administrative inefficiencies. HRMS provides a streamlined web solution.",
+    solution: "Developed a secure MERN stack application featuring JWT authentication, role-based access control, comprehensive employee CRUD operations, and leave management.",
+    myRoleTitle: "Full Stack Developer",
+    myRole: "Designed frontend interfaces in React.js, engineered backend REST APIs in Express.js, created MongoDB database schemas with Mongoose, and implemented JWT authentication.",
     keyFeatures: [
-      "User authentication",
-      "JWT-based authentication",
-      "Employee management",
-      "Employee CRUD operations",
-      "Role-based access",
-      "HR/Admin/Manager functionality",
-      "Leave application and management",
-      "Leave quota handling",
-      "REST API integration",
-      "MongoDB database operations",
-      "Responsive interface"
+      "Developed a full-stack Human Resource Management System for managing employee records and HR operations.",
+      "Implemented JWT-based authentication and role-based access for secure user management.",
+      "Built REST APIs and CRUD functionality for employee management and integrated them with the React frontend.",
+      "Implemented leave application and management functionality with MongoDB for data storage."
     ],
     challengesSolved: [
-      "Connecting React frontend with Express backend",
-      "Implementing JWT authentication",
-      "Creating protected routes",
-      "Managing employee CRUD operations",
-      "Handling role-based functionality",
-      "Managing leave application and leave data",
-      "Connecting APIs with MongoDB"
+      "Connecting React frontend with Node.js/Express backend via REST APIs.",
+      "Securing administrative and employee routes with JWT authentication.",
+      "Structuring relational Mongoose schemas for leave applications and employee profiles."
     ],
     liveDemoUrl: "https://hrms-management-8l03.onrender.com/",
     githubUrl: "https://github.com/MuskanLohar/HRMS-management-",
@@ -244,134 +180,58 @@ export const projectsData = [
     githubText: "GitHub Repository"
   },
   {
-    id: "ai-chatboard",
-    name: "AI Chatboard",
-    projectType: "AI-Powered MERN Chat Application",
-    tagline: "AI-Powered MERN Chat Application",
-    shortDescription: "AI-powered chat application with Gemini API integration, conversation history and a modern responsive interface.",
+    id: "eventspark",
+    name: "EventSpark – Event Management Platform",
+    projectType: "MERN Stack Platform",
+    tagline: "Full-stack event management platform for discovering events and managing user RSVPs.",
+    shortDescription: "Built with React.js, Node.js, Express.js, MongoDB, Mongoose, Redux, JWT, Multer, and Gemini API for AI-powered description generation.",
     featured: true,
     isPrimary: false,
-    category: "AI Integration",
-    imageTheme: "cyan",
-    cardTechStack: ["React", "Vite", "Node.js", "Express", "Gemini AI", "Tailwind CSS"],
+    badgeText: "AI INTEGRATED MERN PROJECT",
+    category: "MERN Stack + AI",
+    imageTheme: "emerald",
+    cardTechStack: ["React.js", "Redux", "Node.js", "Express.js", "MongoDB", "JWT", "Gemini API"],
     techStack: [
       "React.js",
-      "Vite",
-      "Axios",
-      "Tailwind CSS",
-      "React Markdown",
+      "Redux",
       "Node.js",
       "Express.js",
-      "Google Gemini API",
-      "@google/genai",
-      "REST API",
-      "CORS",
-      "dotenv",
-      "Git",
-      "GitHub"
-    ],
-    techStackCategorized: [
-      { category: "Frontend", items: ["React.js", "Vite", "Axios", "Tailwind CSS", "React Markdown"] },
-      { category: "Backend", items: ["Node.js", "Express.js"] },
-      { category: "AI", items: ["Google Gemini API", "@google/genai"] },
-      { category: "Other", items: ["REST API", "CORS", "dotenv", "Git", "GitHub"] }
-    ],
-    overview: "AI Chatboard is an AI-powered chat application where users can send prompts and receive AI-generated responses through a backend API connected with Google's Gemini API.",
-    problem: "Standard web chat interfaces often lack lightweight prompt workspaces with markdown response rendering. AI Chatboard offers a dedicated AI assistant interface.",
-    solution: "I developed a responsive React chat application powered by an Express backend that communicates securely with Google's Gemini API (@google/genai) to render Markdown responses and track conversation history.",
-    myRoleTitle: "Full-Stack Developer",
-    myRole: "Full-Stack Developer - Developed the React chat interface, built backend Express proxy routes for AI requests, integrated the Gemini AI API, and structured real-time response handling.",
-    keyFeatures: [
-      "AI chat interface",
-      "Prompt-based conversations",
-      "Gemini AI integration",
-      "Backend API for AI requests",
-      "Conversation history support",
-      "React frontend",
-      "Express backend",
-      "REST API integration",
-      "Responsive dark UI",
-      "Markdown response rendering"
-    ],
-    challengesSolved: [
-      "Integrating frontend with backend AI API",
-      "Connecting Gemini API securely through backend",
-      "Handling user prompts and AI responses",
-      "Managing conversation history",
-      "Rendering AI responses properly",
-      "Creating a responsive chat interface"
-    ],
-    liveDemoUrl: "https://aichatboard.onrender.com/",
-    githubUrl: "https://github.com/MuskanLohar/AIchatBoard",
-    liveDemoText: "Live Demo",
-    githubText: "GitHub Repository"
-  },
-  {
-    id: "imaginex",
-    name: "Imaginex",
-    projectType: "MERN Stack AI Image Generation Application",
-    tagline: "MERN Stack AI Image Generation Application",
-    shortDescription: "AI-powered image generation platform built with MERN, Gemini AI, JWT authentication and Cloudinary.",
-    featured: true,
-    isPrimary: false,
-    category: "Creative Web App",
-    imageTheme: "purple",
-    cardTechStack: ["React", "Node.js", "Express", "MongoDB", "JWT", "Gemini AI", "Cloudinary"],
-    techStack: [
-      "React.js",
-      "JavaScript",
-      "CSS / Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "REST APIs",
       "MongoDB",
       "Mongoose",
       "JWT",
-      "bcrypt",
-      "Google GenAI / Gemini",
-      "Cloudinary",
+      "Multer",
+      "Gemini API",
+      "Tailwind CSS",
+      "REST APIs",
       "Git",
       "GitHub",
       "Postman"
     ],
     techStackCategorized: [
-      { category: "Frontend", items: ["React.js", "JavaScript", "CSS / Tailwind CSS"] },
-      { category: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
+      { category: "Frontend", items: ["React.js", "Redux", "Tailwind CSS"] },
+      { category: "Backend", items: ["Node.js", "Express.js", "REST APIs", "Multer"] },
       { category: "Database", items: ["MongoDB", "Mongoose"] },
-      { category: "Authentication", items: ["JWT", "bcrypt"] },
-      { category: "AI", items: ["Google GenAI / Gemini"] },
-      { category: "Cloud", items: ["Cloudinary"] },
-      { category: "Tools", items: ["Git", "GitHub", "Postman"] }
+      { category: "Authentication & AI", items: ["JWT", "Gemini API"] }
     ],
-    overview: "Imaginex is a MERN-based AI image generation application that allows users to generate images using AI and manage generated images through cloud storage.",
-    problem: "Generating and managing AI imagery requires combining user authentication, AI API prompt processing, and reliable media cloud storage. Imaginex provides a single platform for this workflow.",
-    solution: "Built a full-stack MERN application integrating Google GenAI / Gemini for AI image synthesis, JWT for secure user access, and Cloudinary for uploading and serving media assets.",
-    myRoleTitle: "Full-Stack Developer",
-    myRole: "Full-Stack Developer - Designed frontend components in React, created Node.js REST endpoints, integrated Gemini AI image generation logic, and configured Cloudinary image storage.",
+    overview: "EventSpark is a full-stack event management platform where users can explore events, manage RSVPs, and leverage Gemini AI to generate automated event descriptions.",
+    problem: "Coordinating event discovery, registration tracking, and event details requires a modern interactive platform.",
+    solution: "Built a MERN application supporting event search, RSVP attendance tracking, admin controls, image/file uploads via Multer, and Gemini API integration for automated content generation.",
+    myRoleTitle: "Full Stack Developer",
+    myRole: "Built frontend with React & Redux, created backend REST APIs in Node.js/Express, set up MongoDB data models, integrated Gemini AI API, and handled file uploads.",
     keyFeatures: [
-      "User registration/login",
-      "JWT authentication",
-      "AI image generation",
-      "Gemini/Google GenAI integration",
-      "Cloudinary integration",
-      "Image upload and storage",
-      "MongoDB database",
-      "REST API integration",
-      "Responsive UI",
-      "Modern dark interface"
+      "Developed a full-stack event management platform for discovering events and managing user RSVPs.",
+      "Implemented event search, RSVP functionality, attendance tracking, and admin-based event management.",
+      "Built REST APIs for event, authentication, and RSVP operations with secure JWT-based authentication.",
+      "Integrated Gemini API for AI-powered event description generation and implemented file upload functionality."
     ],
     challengesSolved: [
-      "Integrating AI image generation",
-      "Connecting React with backend APIs",
-      "Implementing authentication",
-      "Managing generated images",
-      "Uploading/storing images with Cloudinary",
-      "Connecting MongoDB with application data",
-      "Handling API integration"
+      "Integrating Gemini API for AI content generation on event listings.",
+      "Managing complex global application state with Redux Toolkit.",
+      "Handling multipart form uploads and file storage for event banners."
     ],
-    liveDemoUrl: "",
-    githubUrl: "https://github.com/MuskanLohar/imaginex",
-    liveDemoText: "Live Demo — Coming Soon",
+    liveDemoUrl: "https://eventspark-zpfl.onrender.com/login",
+    githubUrl: "https://github.com/MuskanLohar/EventSpark",
+    liveDemoText: "Live Demo",
     githubText: "GitHub Repository"
   }
 ];
@@ -382,11 +242,11 @@ export const educationData = [
     degree: "Master of Computer Applications (MCA)",
     status: "Currently Pursuing",
     statusType: "current",
-    displayBadge: "Currently Pursuing • 2025–2027",
+    displayBadge: "Pursuing • 2025–2027 (Expected)",
     institution: "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Indore",
     location: "Indore, Madhya Pradesh, India",
-    period: "2025 – 2027",
-    description: "Advanced master's degree program focusing on software engineering principles, enterprise database architecture, modern web technologies, and advanced full-stack development."
+    period: "2025 – 2027 (Expected)",
+    description: "Master's degree program focusing on modern software engineering, web architectures, backend systems, database management, and advanced full-stack development."
   },
   {
     id: "bca",
@@ -397,6 +257,6 @@ export const educationData = [
     institution: "Mandsaur University, Mandsaur",
     location: "Mandsaur, Madhya Pradesh, India",
     period: "2022 – 2025",
-    description: "Undergraduate degree program building strong core foundations in Computer Science, Object-Oriented Programming, Database Systems, Data Structures, and Web Development."
+    description: "Undergraduate degree program establishing strong foundations in Computer Science, Data Structures, Database Systems, Object-Oriented Programming, and Web Technologies."
   }
 ];

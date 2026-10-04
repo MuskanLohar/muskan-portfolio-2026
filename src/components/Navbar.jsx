@@ -103,13 +103,17 @@ const Navbar = ({ onDownloadResume }) => {
 
           {/* Right CTA Button & Mobile Toggle */}
           <div className="flex items-center gap-3">
-            <button
+            <a
+              href={personalInfo.resumePath}
+              download="muskanlohar-mern-resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={onDownloadResume}
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 via-cyan-300 to-indigo-300 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Resume</span>
-            </button>
+            </a>
 
             {/* Mobile menu hamburger button */}
             <button
@@ -147,16 +151,20 @@ const Navbar = ({ onDownloadResume }) => {
             })}
 
             <div className="pt-4 border-t border-slate-800/80 mt-2">
-              <button
-                onClick={() => {
+              <a
+                href={personalInfo.resumePath}
+                download="muskanlohar-mern-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
                   setMobileMenuOpen(false);
-                  onDownloadResume();
+                  onDownloadResume(e);
                 }}
                 className="w-full flex items-center justify-center gap-2 py-3 text-sm font-semibold uppercase tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 to-indigo-300 rounded-xl shadow-lg shadow-cyan-500/20 active:scale-95 cursor-pointer"
               >
                 <Download className="w-4 h-4" />
                 <span>Download Resume</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

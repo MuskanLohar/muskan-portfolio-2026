@@ -85,13 +85,17 @@ const Hero = ({ onDownloadResume }) => {
             <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto mb-10">
               
               {/* Prominent Download Resume Button */}
-              <button
+              <a
+                href={personalInfo.resumePath}
+                download="muskanlohar-mern-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={onDownloadResume}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-slate-950 bg-gradient-to-r from-cyan-400 via-cyan-300 to-indigo-300 rounded-xl hover:shadow-xl hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
                 <Download className="w-4 h-4" />
                 <span>Download Resume</span>
-              </button>
+              </a>
 
               {/* View My Projects */}
               <a

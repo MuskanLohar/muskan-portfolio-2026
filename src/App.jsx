@@ -24,18 +24,19 @@ function App() {
   };
 
   // Resume Download Handler
-  const handleDownloadResume = () => {
-    const link = document.createElement('a');
-    link.href = personalInfo.resumePath;
-    link.download = 'Muskan_MERN_Stack_Developer_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const handleDownloadResume = (e) => {
+    if (!e || !e.target || !e.target.closest('a[href]')) {
+      const link = document.createElement('a');
+      link.href = personalInfo.resumePath;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.download = 'muskanlohar-mern-resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
 
-    showToast(
-      'Resume download initiated! (Tip: Place your actual resume PDF at public/muskan-resume.pdf)',
-      'info'
-    );
+    showToast('Resume download initiated!', 'info');
   };
 
   // Project Live Demo Click Handler
@@ -62,7 +63,7 @@ function App() {
       />
 
       {/* About Section */}
-      <About />
+      <About onDownloadResume={handleDownloadResume} />
 
       {/* Skills Section */}
       <Skills />

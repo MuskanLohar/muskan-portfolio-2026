@@ -35,9 +35,9 @@ All text, contact information, project details, education, and links can be upda
    📍 `public/muskan-profile-photo.jpg`
 
 ### 3. Uploading Resume PDF
-1. Save your resume PDF as `muskan-resume.pdf`.
+1. Save your resume PDF as `muskanlohar-mern-resume.pdf`.
 2. Place it inside the `public/` directory:
-   📍 `public/muskan-resume.pdf`
+   📍 `public/muskanlohar-mern-resume.pdf`
 
 ### 4. Updating GitHub & LinkedIn URLs
 Open `src/data/portfolioData.js` and set:
